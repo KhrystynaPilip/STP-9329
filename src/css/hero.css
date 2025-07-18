@@ -1,0 +1,237 @@
+.hero {
+  background-color: var(--violet);
+  background-image: url('../img/home_page/castle.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.title {
+  position: relative;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 0;
+  z-index: 1;
+  color: var(--white);
+  display: inline-block;
+  margin: 176px auto 239px auto;
+}
+.title::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  -webkit-text-stroke: 15px #381677;
+  z-index: -1;
+}
+.title::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/princess_favicon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 162px;
+  height: 150px;
+  z-index: -2;
+  bottom: 25px;
+  left: 25%;
+}
+
+.title-accent {
+  color: var(--castle-color);
+}
+.hero-sectiob-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 320px;
+  padding: 32px 16px 40px 16px;
+  background: var(--bg-1block);
+  color: var(--blue);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+}
+.under-header-text {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+.hero-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.hero-list-item {
+}
+.bold-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+.text {
+  font-family: 'Inter Tight', sans-serif;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 125%;
+}
+.text.under-block {
+  margin: 8px auto 0 auto;
+  width: 250px;
+}
+.bonus-text {
+  text-align: left;
+  color: var(--black);
+}
+
+.img-and-text-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 22px;
+}
+.img-and-text-container.castle {
+  flex-direction: row;
+  gap: 4px;
+}
+.thumb {
+  width: 60px;
+  height: 60px;
+  border: none;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.accent-text {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--blue);
+}
+
+.play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 16px;
+  width: 288px;
+  height: 54px;
+  background: var(--black);
+  border: none;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+.play-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../img/home_page/castle@2x.jpg');
+  }
+}
+@media (min-width: 1200px) {
+  .title {
+    font-size: 80px;
+    margin: 360px auto 315px auto;
+  }
+  .title::after {
+    width: 242px;
+    height: 224px;
+    bottom: 42px;
+    left: -100px;
+  }
+  .hero-sectiob-container {
+    border-radius: 40px;
+    max-width: 1040px;
+    padding: 72px 56px 72px 89px;
+  }
+  .hero-title {
+    font-size: 48px;
+  }
+  .under-header-text {
+    font-size: 32px;
+    margin-bottom: 64px;
+  }
+
+  .hero-list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 44px;
+  }
+
+  .hero-list-item:nth-child(1) {
+    order: 2; /* Текст посередині */
+    flex: 1.5;
+  }
+
+  .hero-list-item:nth-child(2) {
+    order: 1; /* Gem зліва */
+    flex: 1;
+    align-self: flex-start;
+  }
+
+  .hero-list-item:nth-child(3) {
+    order: 3; /* Castle справа */
+    flex: 1;
+  }
+
+  .text {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 160%;
+    width: 432px;
+  }
+  .bonus-text {
+    font-size: 18px;
+    line-height: 167%;
+  }
+  .img-and-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .img-and-text-container.castle {
+    flex-direction: column;
+    gap: 0;
+  }
+  .accent-text {
+    font-size: 20px;
+  }
+  .play-btn {
+  }
+
+  .bold-text {
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .text.under-block {
+    width: 468px;
+  }
+  .thumb {
+    width: 153px;
+    height: 153px;
+  }
+}

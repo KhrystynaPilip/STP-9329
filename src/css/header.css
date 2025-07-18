@@ -1,5 +1,17 @@
 .header {
-  padding: 20px 0;
+  position: fixed;
+  height: 44px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  width: 100%;
+  padding: 10px 0;
+  background: var(--blue);
+  color: #ffffff;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 .wrapper {
@@ -23,7 +35,6 @@
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
-  
 }
 .nav-link {
   position: relative;
@@ -54,11 +65,8 @@
 
 .burger-btn,
 .btn-close {
-  padding: 0.5em 0.8em;
-  font-size: 1rem;
-  background-color: blueviolet;
   border: none;
-  border-radius: 0.5em;
+  background-color: transparent;
   color: #fff;
 }
 
