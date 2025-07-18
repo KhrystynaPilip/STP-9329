@@ -75,7 +75,11 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
-  background-image: url('../img/');
+  background-image: url('../img/background.jpg');
+  background-color: var(--violet);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 245px;
 }
 body * {
   scroll-margin-top: 50px;
