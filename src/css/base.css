@@ -75,7 +75,12 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
-  background-image: url('../img/background.jpg');
+  background-image: linear-gradient(
+      0deg,
+      rgba(46, 16, 92, 0.5),
+      rgba(46, 16, 92, 0.5)
+    ),
+    url('../img/background.jpg');
   background-color: var(--violet);
   background-repeat: repeat;
   background-position: center;
@@ -102,6 +107,32 @@ body * {
 .section {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.title {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--white);
+}
+
+.sub-title {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--white);
 }
 
 html {
