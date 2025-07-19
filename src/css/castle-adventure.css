@@ -7,6 +7,15 @@
 .thumb-castle-advent {
   min-width: 320px;
   min-height: 300px;
+
+  /** спробуєш через гумовий контейнер?:3
+  /** або може взагалі через background-image? 
+  Бо НЕ резинова картинка пробиває основні рамки і в нас на 320px
+  зʼявляється загадкова пустота справа */
+
+  /* width: 100%;
+  max-width: 100%;
+  height: auto; */
 }
 
 .description-wrapper {
