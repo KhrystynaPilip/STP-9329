@@ -1,69 +1,80 @@
+.castle-advent-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-height: 710px;
+}
+
+.sub-title-castle-advent {
+  width: 254px;
+}
+
 .castle-advent-wrapper {
   position: relative;
-  max-width: 100%;
-  height: 100vh;
+  width: 100%;
 }
 
 .thumb-castle-advent {
-  min-width: 320px;
-  min-height: 300px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.description-wrapper {
-  /* Description */
+.thumb-castle-advent img {
+  width: 100vw;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
 
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.castle-advent-description-wrapper {
   padding: 10px 12px;
-  gap: 10px;
 
   position: absolute;
-  width: 247px;
-  height: 200px;
-  left: calc(50% - 247px / 2 - 0.5px);
+  width: 250px;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+  left: calc(50% - 250px / 2 - 0.5px);
   top: 64px;
 
-  /* Violet */
-  background: #381677;
-  /* Yellow stroke */
-  border-width: 0px 10px 10px 10px;
-  border-style: solid;
-  border-color: #bd8701;
-  box-shadow: inset 5px -5px 4px rgba(29, 6, 73, 0.5),
-    inset -5px 5px 4px rgba(29, 6, 73, 0.5);
+  border-bottom: 10px solid var(--yellow-stroke);
+  border-left: 10px solid var(--yellow-stroke);
+  border-right: 10px solid var(--yellow-stroke);
   border-radius: 5px 8px 40px 40px;
-}
+  box-shadow: inset -5px 5px 4px 0 rgba(29, 6, 73, 0.5),
+    inset 5px -5px 4px 0 rgba(29, 6, 73, 0.5);
+  background: var(--violet);
 
-.princess {
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  width: 250px;
+  transform-origin: top center;
+  transform: scaleY(0);
   opacity: 0;
-  animation: fadeIn 2s ease-out 0.5s forwards;
+  animation: unfoldScroll 1s ease-out forwards;
+  animation-delay: 1.65s;
 }
 
 .scroll-container {
   position: absolute;
-  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 5;
-  perspective: 800px;
+  bottom: -90%;
+  width: 100%;
+  max-width: 100vw;
+  height: 320px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .scroll {
-  width: 280px;
-  transform: scaleY(0);
-  opacity: 0;
-  animation: unfold 1s ease-out 2.5s forwards;
-  transform-origin: top center;
+  width: 320px;
+  height: 124px;
 }
 
-@keyframes unfold {
+@keyframes unfoldScroll {
   0% {
     transform: scaleY(0);
     opacity: 0;
@@ -74,8 +85,38 @@
   }
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
+/* desctop */
+
+@media only screen and (min-width: 1200px) {
+  .castle-advent-container {
+    gap: 64px;
+  }
+
+  .sub-title-castle-advent {
+    width: 100%;
+  }
+
+  .thumb-castle-advent img {
+    height: 883px;
+    transform-origin: left top;
+    transform: scale(1.25);
+  }
+
+  .castle-advent-description-wrapper {
+    padding: 20px 40px;
+    width: 430px;
+    left: calc(50% - 430px / 2 - 0.5px);
+    top: 110px;
+  }
+
+  .scroll-container {
+    transform: translateX(-75%);
+    bottom: 10%;
+    height: 410px;
+  }
+
+  .scroll {
+    width: 559px;
+    height: 207px;
   }
 }

@@ -124,6 +124,7 @@ body * {
   font-size: 20px;
   text-align: center;
   color: var(--white);
+  margin: 0 auto;
 }
 
 .description {
@@ -147,6 +148,19 @@ html {
   }
   body * {
     scroll-margin-top: 130px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .sub-title {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 160%;
   }
 }
 

@@ -151,11 +151,11 @@
   }
 }
 @media (min-width: 1200px) {
-  .title {
+  .main-title {
     font-size: 80px;
     margin: 360px auto 315px auto;
   }
-  .title::after {
+  .main-title::after {
     width: 242px;
     height: 224px;
     bottom: 42px;
