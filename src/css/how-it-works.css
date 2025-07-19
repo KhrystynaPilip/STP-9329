@@ -26,8 +26,6 @@
   display: flex;
   align-items: center;
   gap: 17px;
-  /* пакашо хай буде так */
-  /* max-width: 288px; */
 }
 .bubble-img {
   width: 136px;
@@ -37,7 +35,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* flex-shrink: 0; */
 }
 .accent-text-white {
   font-family: 'Fredoka', sans-serif;
@@ -89,8 +86,6 @@
   .how-it-works-descr {
     margin: 176px auto 0 auto;
     max-width: 330px;
-  }
-  .position-wrapper {
   }
   .bubble-block {
     gap: 40px;

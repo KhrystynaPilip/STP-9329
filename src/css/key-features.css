@@ -1,3 +1,102 @@
 .key-features-section {
   background-color: rgba(20, 145, 121, 80%);
+  position: relative;
+  overflow-x: clip;
+}
+.tube-img-left {
+  position: absolute;
+  background-image: url(../img/key_features/tube_left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -23px;
+  top: -45px;
+  width: 100px;
+  height: 150px;
+}
+.tube-img-right {
+  position: absolute;
+  background-image: url(../img/key_features/tube_right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: -23px;
+  top: -45px;
+  width: 100px;
+  height: 150px;
+}
+.section-key-list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 109px;
+  position: relative;
+}
+
+.block-key-list-item {
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 288px;
+  background: var(--violet);
+}
+.block-key-list-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.logo-img {
+  position: absolute;
+  background-image: url(../img/key_features/castle-match_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 423px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 115px;
+  height: 77px;
+}
+
+@media (min-resolution: 192dpi) {
+  .tube-img-left {
+    background-image: url(../img/key_features/tube_left@2x.png);
+  }
+  .tube-img-right {
+    background-image: url(../img/key_features/tube_right@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title.key-features {
+    margin-top: 12px;
+  }
+  .tube-img-left {
+    width: 340px;
+    height: 510px;
+    left: -55px;
+    top: -172px;
+  }
+  .tube-img-right {
+    width: 340px;
+    height: 510px;
+    right: -55px;
+    top: -172px;
+  }
+  .section-key-list {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 64px;
+    padding: 0 48px;
+    height: 100%;
+  }
+  .section-key-list-item.first {
+    padding-bottom: 112px;
+  }
+  .section-key-list-item.second {
+    padding-top: 112px;
+  }
+  .block-key-list-item:not(:last-child) {
+    margin-bottom: 136px;
+  }
+
+  .logo-img {
+    top: 421px;
+    width: 327px;
+    height: 218px;
+  }
 }
