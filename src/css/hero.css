@@ -150,6 +150,7 @@
     background-image: url('../img/home_page/castle@2x.jpg');
   }
 }
+
 @media screen and (min-width: 1200px) {
   .main-title {
     font-size: 80px;
