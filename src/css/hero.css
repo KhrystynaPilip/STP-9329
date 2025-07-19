@@ -8,7 +8,7 @@
   font-family: 'Fredoka', sans-serif;
 }
 
-.title {
+.main-title {
   position: relative;
   font-weight: 700;
   font-size: 48px;
@@ -18,7 +18,7 @@
   display: inline-block;
   margin: 176px auto 239px auto;
 }
-.title::before {
+.main-title::before {
   content: attr(data-text);
   position: absolute;
   inset: 0;
@@ -29,7 +29,7 @@
   -webkit-text-stroke: 15px #381677;
   z-index: -1;
 }
-.title::after {
+.main-title::after {
   content: '';
   position: absolute;
   background-image: url(../img/princess_favicon.png);

@@ -1,14 +1,40 @@
-/* body {
-  margin: 0;
-  background: url('./images/castle-bg.jpg') center/cover no-repeat;
-  overflow: hidden;
-  font-family: 'Fredoka', sans-serif;
+.castle-advent-wrapper {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
 }
 
-.scene {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+.thumb-castle-advent {
+  min-width: 320px;
+  min-height: 300px;
+}
+
+.description-wrapper {
+  /* Description */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 10px;
+
+  position: absolute;
+  width: 247px;
+  height: 200px;
+  left: calc(50% - 247px / 2 - 0.5px);
+  top: 64px;
+
+  /* Violet */
+  background: #381677;
+  /* Yellow stroke */
+  border-width: 0px 10px 10px 10px;
+  border-style: solid;
+  border-color: #bd8701;
+  box-shadow: inset 5px -5px 4px rgba(29, 6, 73, 0.5),
+    inset -5px 5px 4px rgba(29, 6, 73, 0.5);
+  border-radius: 5px 8px 40px 40px;
 }
 
 .princess {
@@ -52,4 +78,4 @@
   to {
     opacity: 1;
   }
-} */
+}
