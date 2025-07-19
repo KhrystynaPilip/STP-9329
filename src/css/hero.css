@@ -116,7 +116,7 @@
   border-radius: 50%;
 }
 
-.accent-text {
+.accent-text-purple {
   font-family: 'Fredoka', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -150,12 +150,12 @@
     background-image: url('../img/home_page/castle@2x.jpg');
   }
 }
-@media (min-width: 1200px) {
-  .title {
+@media screen and (min-width: 1200px) {
+  .main-title {
     font-size: 80px;
     margin: 360px auto 315px auto;
   }
-  .title::after {
+  .main-title::after {
     width: 242px;
     height: 224px;
     bottom: 42px;
@@ -218,7 +218,7 @@
     flex-direction: column;
     gap: 0;
   }
-  .accent-text {
+  .accent-text-purple {
     font-size: 20px;
   }
   .play-btn {

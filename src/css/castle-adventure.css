@@ -7,6 +7,12 @@
 .thumb-castle-advent {
   min-width: 320px;
   min-height: 300px;
+
+  /** спробуєш через гумовий контейнер?:3
+  /** або може взагалі через background-image?
+  /* width: 100%;
+  max-width: 100%;
+  height: auto; */
 }
 
 .description-wrapper {

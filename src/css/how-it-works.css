@@ -1,3 +1,134 @@
+/** Господи, воно на таких палках тримаєтьсяТ-Т */
+
 .how-it-works-section {
-  background-color: rgba(46, 16, 92, 50%);
+  position: relative;
+  /* height: 100vh; */
+  /* якщо height: 100vh, то останній кружок провалються в падінг */
+  min-height: 680px;
+  overflow: hidden;
+}
+
+.how-it-works-descr {
+  margin: 32px auto 0 auto;
+}
+.bubble-text {
+  text-align: left;
+}
+.position-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 354px;
+}
+/*! Блок картинка + текст */
+.bubble-block {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  /* пакашо хай буде так */
+  /* max-width: 288px; */
+}
+.bubble-img {
+  width: 136px;
+  height: 136px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* flex-shrink: 0; */
+}
+.accent-text-white {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--white);
+}
+/*! Індивідуальні позиції */
+.bubble1 {
+  top: 24px;
+  left: 0;
+  flex-direction: row;
+}
+.bubble2 {
+  top: 167px;
+  right: 0;
+  flex-direction: row-reverse;
+}
+.bubble3 {
+  top: 312px;
+  left: 0;
+  flex-direction: row;
+}
+.bubble1 .bubble-img {
+  background-image: url(../img/how_it_works_game.jpg);
+}
+.bubble2 .bubble-img {
+  background-image: url(../img/about_the_game/gold.jpg);
+}
+.bubble3 .bubble-img {
+  background-image: url(../img/throne.jpg);
+}
+@media (min-resolution: 192dpi) {
+  .bubble1 .bubble-img {
+    background-image: url(../img/how_it_works_game@2x.jpg);
+  }
+  .bubble2 .bubble-img {
+    background-image: url(../img/about_the_game/gold@2x.jpg);
+  }
+  .bubble3 .bubble-img {
+    background-image: url(../img/throne@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-it-works-section {
+    min-height: 983px;
+  }
+  .how-it-works-descr {
+    margin: 176px auto 0 auto;
+    max-width: 330px;
+  }
+  .position-wrapper {
+  }
+  .bubble-block {
+    gap: 40px;
+  }
+  .bubble-img {
+    width: 242px;
+    height: 242px;
+  }
+  .accent-text-white {
+    font-size: 18px;
+    line-height: 167%;
+  }
+  .bubble1 {
+    top: -208px;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bubble1 > .bubble-text {
+    max-width: 165px;
+  }
+  .bubble2 {
+    top: 113px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    align-items: center;
+  }
+  .bubble2 > .bubble-text {
+    max-width: 178px;
+  }
+  .bubble3 {
+    top: -96px;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .bubble3 > .bubble-text {
+    max-width: 153px;
+  }
 }

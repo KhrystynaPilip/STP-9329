@@ -74,7 +74,6 @@ body {
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
-  margin: 0;
   background-image: linear-gradient(
       0deg,
       rgba(46, 16, 92, 0.5),
@@ -147,6 +146,16 @@ html {
   }
   body * {
     scroll-margin-top: 130px;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .sub-title {
+    font-size: 32px;
+  }
+  .description {
+    font-size: 20px;
+    line-height: 160%;
   }
 }
 
