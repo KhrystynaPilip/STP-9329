@@ -1,0 +1,40 @@
+.boosters-main-title {
+}
+.boosters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.boosters-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.boosters-description-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.boosters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.boosters-list-item {
+  display: flex;
+  flex-direction: row;
+}
+.boosters-description {
+  /* display: flex;
+  flex-direction: row; */
+}
+.boosters-title {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--white);
+}
+
+.boosters-text {
+}
