@@ -21,6 +21,14 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
+  /** спробуєш через гумовий контейнер?:3
+  /** або може взагалі через background-image? 
+  Бо НЕ резинова картинка пробиває основні рамки і в нас на 320px
+  зʼявляється загадкова пустота справа */
+
+  /* width: 100%;
+  max-width: 100%;
+  height: auto; */
 }
 
 .thumb-castle-advent img {
