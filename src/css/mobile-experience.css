@@ -1,0 +1,117 @@
+.mob-experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.screens-container {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  width: 288px;
+  height: 854px;
+  position: relative;
+}
+
+.screen-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 197px;
+  height: 428px;
+}
+
+.screen-img--1 {
+  background-image: url(../img/mobile_experience/mobile_experience_game.png);
+  top: 0;
+  left: 0;
+}
+
+.screen-img--2 {
+  background-image: url(../img/mobile_experience/mobile_experience_castle.png);
+  top: 214px;
+  right: 0;
+}
+
+.screen-img--3 {
+  background-image: url(../img/mobile_experience/mobile_experience_main.png);
+  top: 428px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mobile-experience-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.mobile-experience-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+.mobile-experience-list.first {
+  align-items: flex-start;
+}
+.mobile-experience-list.second {
+  align-items: flex-end;
+}
+.mobile-experience-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.check-img {
+  background-image: url(../img/green_check@2x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-resolution: 192dpi) {
+  .screen-img--1 {
+    background-image: url(../img/mobile_experience/mobile_experience_game@2x.png);
+  }
+  .screen-img--2 {
+    background-image: url(../img/mobile_experience/mobile_experience_castle@2x.png);
+  }
+  .screen-img--3 {
+    background-image: url(../img/mobile_experience/mobile_experience_main@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-exp-section-content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .screens-container {
+    margin-top: 92px;
+    margin-bottom: 0;
+    width: 508px;
+    height: 473px;
+  }
+  .screen-img--2 {
+    top: 0;
+  }
+
+  .screen-img--3 {
+    top: 47px;
+  }
+  .mobile-experience-list-container {
+    gap: 12;
+  }
+  .mobile-experience-list {
+    gap: 12px;
+  }
+  .mobile-experience-list.second {
+    align-items: flex-start;
+  }
+  .mobile-experience-item {
+    gap: 12px;
+  }
+}
