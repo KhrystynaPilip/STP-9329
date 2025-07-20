@@ -1,11 +1,11 @@
 {
-  "name": "evpl_vite_template",
+  "name": "stp-9329",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/evpl_vite_template/",
+    "build": "vite build --base=/STP-9329/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
   },
@@ -18,7 +18,7 @@
     "vite": "^5.4.19",
     "vite-plugin-image-optimizer": "^1.1.8"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Khrystyna Pylypenko <khrystynapylypenko9@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "modern-normalize": "^3.0.1",
