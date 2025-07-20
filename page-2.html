@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-BmtxxX-b.css">
+    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-Ce3dHrbV.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-    <div class="wrapper">
+    <!-- Wrapper of the logo, burger and desctop menu -->
+    <div class="header-wrapper">
+      <!-- Navigation -->
       <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
+        <!-- LOGO -->
+        <a
+          class="nav-logo"
+          href="./index.html"
+          aria-label="Site logo"
+          data-visible="mobile"
+        >
           <img
             srcset="../img/princess_favicon.png 1x, ../img/princess_favicon@2x.png 2x"
             src="../img/princess_favicon.png"
@@ -21,124 +29,116 @@
             height="24"
           />
         </a>
-        <ul class="nav-list">
-          <li class="row-in-nav-list">
-            <ul class="row-list">
-              <li class="nav-item">
-                <a class="nav-link" href="#hero-section">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about-the-game-section"
-                  >About the Game</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#how-it-works-section"
-                  >How It Works</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#key-features-section"
-                  >Key Features</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#castle-adventure-section"
-                  >Castle Adventure</a
-                >
-              </li>
-            </ul>
+        <!-- List in desctop -->
+        <ul class="nav-row" data-visible="desktop">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero-section">Home</a>
           </li>
-
-          <li class="row-in-nav-list">
-            <ul class="row-list">
-              <li class="nav-item">
-                <a class="nav-link" href="#power-ups-section">Power-Ups</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#levels-and-rewards-section"
-                  >Levels & Rewards</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#visuals-and-sound-section"
-                  >Visuals & Sound</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#download-section">Download</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact-section">Contact</a>
-              </li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-the-game-section"
+              >About the Game</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how-it-works-section">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#key-features-section">Key Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#castle-adventure-section"
+              >Castle Adventure</a
+            >
+          </li>
+        </ul>
+        <ul class="nav-row" data-visible="desktop">
+          <li class="nav-item">
+            <a class="nav-link" href="#power-ups-section">Power-Ups</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#levels-and-rewards-section"
+              >Levels & Rewards</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#visuals-and-sound-section"
+              >Visuals & Sound</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#download-section">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
           </li>
         </ul>
       </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">
-          <svg class="mobile-menu-burger-btn" width="24" height="24">
-            <use href="../img/sprite.svg#icon-burger"></use>
-          </svg>
-        </button>
-        <div class="burger-menu" data-visible="close">
-          <button type="button" class="btn-close" data-action="close">
-            <svg class="cross-icon" width="24" height="24">
-              <use href="../img/sprite.svg#icon-cross"></use>
-            </svg>
-          </button>
-          <ul class="nav-burger-list">
-            <li class="nav-burger-item">
-              <a class="nav-burger-link" href="#hero-section">Home</a>
-            </li>
-            <li class="nav-burger-item">
-              <a class="nav-burger-link" href="#about-the-game-section"
-                >About the Game</a
-              >
-            </li>
-            <li class="nav-burger-item">
-              <a class="nav-burger-link" href="#how-it-works-section"
-                >How It Works</a
-              >
-            </li>
-            <li class="nav-burger-item">
-              <a class="nav-burger-link" href="#key-features-section"
-                >Key Features</a
-              >
-            </li>
-            <li class="nav-burger-item">
-              <a class="nav-burger-link" href="#castle-adventure-section"
-                >Castle Adventure</a
-              >
-            </li>
-            <li class="nav-burger-item">
-              <a class="nav-link" href="#power-ups-section">Power-Ups</a>
-            </li>
-            <li class="nav-burger-item">
-              <a class="nav-burger-link" href="#levels-&-rewards-section"
-                >Levels & Rewards</a
-              >
-            </li>
-            <li class="nav-burger-item">
-              <a class="nav-burger-link" href="#visuals-&-sound-section"
-                >Visuals & Sound</a
-              >
-            </li>
-            <li class="nav-burger-item">
-              <a class="nav-burger-link" href="#download-section">Download</a>
-            </li>
-            <li class="nav-burger-item">
-              <a class="nav-burger-link" href="#contact-section">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <!-- Burger-btn -->
+      <button
+        type="button"
+        class="burger-btn"
+        data-action="open"
+        data-visible="mobile"
+      >
+        <svg class="mobile-menu-burger-btn" width="24" height="24">
+          <use href="../img/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>
   </div>
 
-  <!-- Mobile menu -->
-  <div class="mobile-menu-wrapper"></div>
-  <div class="tablet-menu-wrapper"></div>
+  <!--! Mobile Menu NOT in container-->
+  <!--! Керування видимістю через data-menu-visible="true/false". -->
+
+  <div class="burger-menu" data-menu-visible="false">
+    <!-- Btn and list -->
+    <div class="burger-menu__content">
+      <button type="button" class="btn-close" data-action="close">
+        <svg class="cross-icon" width="14" height="14">
+          <use href="../img/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="nav-burger-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#hero-section">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-the-game-section">About the Game</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#how-it-works-section">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#key-features-section">Key Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#castle-adventure-section"
+            >Castle Adventure</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#power-ups-section">Power-Ups</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#levels-&-rewards-section"
+            >Levels & Rewards</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#visuals-&-sound-section"
+            >Visuals & Sound</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#download-section">Download</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-section">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
 
 
