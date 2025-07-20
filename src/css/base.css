@@ -16,6 +16,10 @@
   -webkit-text-size-adjust: 100%;
 }*/
 
+/* * {
+  outline: 1px solid red;
+} */
+
 :root {
   --linc: #0020f5;
   --black: #101010;
