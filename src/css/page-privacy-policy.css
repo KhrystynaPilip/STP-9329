@@ -1,0 +1,33 @@
+.terms-container {
+  background: var(--bg-1block);
+  border-radius: 10px;
+  padding: 40px 16px;
+  text-align: start;
+}
+.main-terms-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+.terms-accent {
+  font-weight: 600;
+}
+
+.terms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.terms-list-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+}
+
+.terms-list-title {
+}
