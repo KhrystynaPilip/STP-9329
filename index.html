@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script type="module" crossorigin src="/evpl_vite_template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-CTzAebFw.css">
+    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-BW5fJndS.css">
   </head>
   <body>
     <header class="header">
@@ -318,8 +318,8 @@
 
       <section class="section">
   <div class="container castle-advent-container">
-    <div>
-      <h2 class="title" id="castle-adventure-section">Castle Adventure</h2>
+    <div class="castle-advent-title-wrapper">
+      <h2 class="title">Castle Adventure</h2>
       <p class="sub-title sub-title-castle-advent">
         Rebuild a Kingdom Through Puzzle Magic
       </p>
@@ -363,7 +363,7 @@
         </p>
       </div>
       <ul class="boosters-list boosters-group-1">
-        <li class="boosters-list-item">
+        <li class="boosters-list-item align-start">
           <img
             class="booosters-list-img"
             srcset="../img/power-ups_&_boosters/bomb.png 1x, ../img/power-ups_&_boosters/bomb@2x.png 2x"
@@ -375,7 +375,7 @@
             <p class="boosters-text">Clear a huge area</p>
           </div>
         </li>
-        <li class="boosters-list-item">
+        <li class="boosters-list-item align-end">
           <div class="boosters-description boosters-group-2">
             <p class="boosters-title">Royal Flame</p>
             <p class="boosters-text">Burn through entire rows</p>
@@ -389,7 +389,7 @@
         </li>
       </ul>
       <ul class="boosters-list boosters-group-2">
-        <li class="boosters-list-item">
+        <li class="boosters-list-item align-end">
           <img
             class="booosters-list-img"
             srcset="../img/power-ups_&_boosters/lightning.png 1x, ../img/power-ups_&_boosters/lightning@2x.png 2x"
@@ -401,7 +401,7 @@
             <p class="boosters-text">Match in a flash</p>
           </div>
         </li>
-        <li class="boosters-list-item">
+        <li class="boosters-list-item align-start">
           <div class="boosters-description boosters-group-2">
             <p class="boosters-title">Mystery Orb</p>
             <p class="boosters-text">Adds powerful matches randomly</p>
@@ -453,51 +453,94 @@
   </div>
 </section>
 
-      
+      <section class="section">
+  <div class="container visuals-atmosphere-container">
+    <div class="castle-advent-title-wrapper">
+      <h2 class="title">Visuals & Atmosphere</h2>
+      <p class="sub-title sub-title-castle-advent">
+        A World of Color, Charm, and Calm
+      </p>
+    </div>
+    <div class="castle-advent-wrapper">
+      <div class="thumb-castle-advent">
+        <img
+          srcset="../img/throne.jpg 1x, ../img/throne@2x.jpg 2x"
+          src="../img/throne.jpg"
+          alt="throne"
+        />
+      </div>
+      <!-- <div class=".visuals-atmosphere-scroll-container">
+        <img src="./img/scroll.png" class="scroll" alt="Magic Scroll" />
+        <div class="visuals-atmosphere-description-wrapper">
+          <p class="description">
+            Castle Match is more than a puzzle - it’s an experience. Enjoy!
+          </p>
+          <p class="description">
+            Perfect for relaxing, unwinding, or escaping into a dreamlike
+            kingdom.
+          </p>
+        </div> -->
+      </div>
+      <ul class="visuals-atmosphere-list">
+        <li class="visuals-atmosphere-list-item">Gentle background music</li>
+        <li class="visuals-atmosphere-list-item">
+          Magical, hand-drawn visuals
+        </li>
+        <li class="visuals-atmosphere-list-item">
+          Adorable characters and charming animations
+        </li>
+        <li class="visuals-atmosphere-list-item">
+          Fluid animations and seamless transitions
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
       
       
       <section class="section support-section">
+  <div class="book-img-right"></div>
   <div class="container support-container">
     <div class="support-title-wrapper">
-      <h2 class="title boosters-main-title" id="contact-section">
-        Contact & Support
-      </h2>
-      <div>
-        <p>
-          Got a question or suggestion for our royal puzzle team? We’re here to
-          help!
+      <h2 class="title">Contact & Support</h2>
+      <div class="support-description-wrapper">
+        <p class="description support-description">
+          Got a question or suggestion for our royal puzzle team? <br />
+          We’re here to help!
         </p>
         <div>
-          <ul>
-            <li>Email: info@glowcastlemania.com</li>
-            <li>Mon - Fri, 9am - 6pm GMT</li>
-            <li>
+          <ul class="support-list">
+            <li class="support-list-item">
+              Email:
+              <a href="mailto:info@glowcastlemania.com" class="support-link">
+                info@glowcastlemania.com
+              </a>
+            </li>
+            <li class="support-list-item">Mon - Fri, 9am - 6pm GMT</li>
+            <li class="support-list-item support-social-wrapper">
               Follow us on social:
-              <ul class="footer-social-list">
-                <li class="footer-list-item">
-                  <a href="" class="footer-list-link">
-                    <svg class="social-list-icon" width="24" height="24">
+              <ul class="support-social-list">
+                <li class="support-social-list-item">
+                  <a href="https://www.facebook.com/" class="support-list-link">
+                    <svg class="social-list-icon" width="40" height="40">
                       <use href="../img/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="footer-list-item">
-                  <a href="" class="footer-list-link">
-                    <svg class="social-list-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-list-item">
-                  <a href="" class="footer-list-link">
-                    <svg class="social-list-icon" width="24" height="24">
+                <li class="support-social-list-item">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="support-list-link"
+                  >
+                    <svg class="social-list-icon" width="40" height="40">
                       <use href="../img/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="footer-list-item">
-                  <a href="" class="footer-list-link">
-                    <svg class="social-list-icon" width="24" height="24">
+                <li class="support-social-list-item">
+                  <a href="https://www.youtube.com/" class="support-list-link">
+                    <svg class="social-list-icon" width="40" height="40">
                       <use href="../img/sprite.svg#icon-youtube"></use>
                     </svg>
                   </a>
@@ -509,17 +552,39 @@
       </div>
     </div>
   </div>
+  <div class="chest-img-left"></div>
 </section>
 
     </main>
 
-    <footer class="footer-section">
+    <footer class="section footer-section">
   <div class="container policy-container">
-    <ul class="policy-wrapper">
-      <li>Privacy Policy</li>
-      <li>Cookies Policy</li>
-      <li>Terms of Conditions</li>
-    </ul>
+    <nav class="footer-nav">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <a
+            class="footer-nav-link {=$highlight-act}"
+            href="../page-privacy-policy.html"
+            >Privacy Policy</a
+          >
+        </li>
+        <li class="footer-nav-item">
+          <a
+            class="footer-nav-link {=$highlight-curr}"
+            href="../page-cokies-policy.html"
+            >Cookies Policy</a
+          >
+        </li>
+        <li class="footer-nav-item">
+          <a
+            class="footer-nav-link {=$highlight-curr}"
+            href="../page-terms-of-conditions.html"
+            >Terms of Conditions</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <ul class="policy-wrapper"></ul>
     <p class="footer-desc">
       © 2025
       <a
