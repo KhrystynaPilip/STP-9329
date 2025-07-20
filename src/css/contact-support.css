@@ -91,6 +91,15 @@
   z-index: 999;
 }
 
+@media (min-resolution: 192dpi) {
+  .chest-img-left {
+    background-image: url(../img/contact_&_support/chest@2x.png);
+  }
+  .book-img-right {
+    background-image: url(../img/contact_&_support/book@2x.png);
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .book-img-right {
     width: 340px;
