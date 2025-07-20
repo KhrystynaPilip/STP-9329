@@ -1,0 +1,108 @@
+.screens-position-wrapper {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.screen-block {
+  width: 320px;
+  height: 692px;
+  position: relative;
+}
+.screen-img {
+  width: 320px;
+  height: 692px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.screen1 .screen-img {
+  background-image: url(../img/levels_&_rewards/princess_in_the_game.png);
+}
+.screen2 .screen-img {
+  background-image: url(../img/levels_&_rewards/level_in_game.png);
+}
+.screen-text1,
+.screen-text2 {
+  position: absolute;
+  text-align: left;
+}
+
+.screen1 .screen-text1 {
+  top: 24px;
+  right: 56px;
+  max-width: 96px;
+}
+.screen1 .screen-text2 {
+  left: 16px;
+  bottom: 20px;
+  max-width: 136px;
+}
+.screen2 .screen-text1 {
+  top: 20px;
+  right: 16px;
+  max-width: 136px;
+}
+.screen2 .screen-text2 {
+  left: 16px;
+  bottom: 20px;
+  max-width: 137px;
+}
+@media (min-resolution: 192dpi) {
+  .screen1 .screen-img {
+    background-image: url(../img/levels_&_rewards/princess_in_the_game@2x.png);
+  }
+  .screen2 .screen-img {
+    background-image: url(../img/levels_&_rewards/level_in_game@2.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .levels-and-rewards-section {
+    background-image: linear-gradient(
+      0deg,
+      rgba(20, 145, 121, 70%),
+      rgba(20, 145, 121, 70%)
+    );
+  }
+  .screens-position-wrapper {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    gap: 202px;
+  }
+  .screen-block {
+    width: 330px;
+    height: 714px;
+  }
+  .screen-img {
+    width: 330px;
+    height: 714px;
+  }
+  .screen-text1,
+  .screen-text2 {
+    font-size: 18px;
+    line-height: 167%;
+  }
+  .screen1 .screen-text1 {
+    top: 24px;
+    right: -47px;
+    max-width: 111px;
+  }
+  .screen1 .screen-text2 {
+    left: -89px;
+    bottom: 51px;
+    max-width: 153px;
+  }
+  .screen2 .screen-text1 {
+    top: 24px;
+    right: -62px;
+    max-width: 126px;
+  }
+  .screen2 .screen-text2 {
+    left: -89px;
+    bottom: 46px;
+    max-width: 132px;
+  }
+}

@@ -1,5 +1,9 @@
 .key-features-section {
-  background-color: rgba(20, 145, 121, 80%);
+  background-image: linear-gradient(
+    0deg,
+    rgba(20, 145, 121, 70%),
+    rgba(20, 145, 121, 70%)
+  );
   position: relative;
   overflow-x: clip;
 }
@@ -81,7 +85,6 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 64px;
-    padding: 0 48px;
     height: 100%;
   }
   .section-key-list-item.first {
