@@ -2,11 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/evpl_vite_template/favicon.svg" />
+    <link rel="icon" type="image/png" href="/evpl_vite_template/assets/princess_favicon-BL63Psb2.png" />
+    <title>
+      Castle Match – Build, Match & Discover Treasures | Glow Castle Mania
+    </title>
+    <meta
+      name="title"
+      content="Castle Match – Build, Match & Discover Treasures | Glow Castle Mania"
+    />
+    <meta
+      name="description"
+      content="Play Castle Match – a magical match-3 puzzle adventure where you help a princess rebuild her castle, unlock treasures, and complete hundreds of fun levels!"
+    />
+    <meta
+      name="keywords"
+      content="Castle Match, match 3 puzzle game, puzzle adventure, castle builder game, princess match game, casual match 3, treasure puzzle, mobile game, Android match 3, fantasy puzzle game"
+    />
+    <meta name="author" content="Glow Castle Mania" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+
     <script type="module" crossorigin src="/evpl_vite_template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-r6SaaQ-x.css">
+    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-BmtxxX-b.css">
   </head>
   <body>
     <header class="header">
@@ -14,128 +30,474 @@
     <div class="wrapper">
       <nav class="nav">
         <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/evpl_vite_template/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
+          <img
+            srcset="../img/princess_favicon.png 1x, ../img/princess_favicon@2x.png 2x"
+            src="../img/princess_favicon.png"
+            alt="cute princess in a purple frame"
+            width="24"
+            height="24"
+          />
         </a>
         <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+          <li class="row-in-nav-list">
+            <ul class="row-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#hero-section">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-the-game-section"
+                  >About the Game</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#how-it-works-section"
+                  >How It Works</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#key-features-section"
+                  >Key Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#castle-adventure-section"
+                  >Castle Adventure</a
+                >
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+
+          <li class="row-in-nav-list">
+            <ul class="row-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#power-ups-section">Power-Ups</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#levels-and-rewards-section"
+                  >Levels & Rewards</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#visuals-and-sound-section"
+                  >Visuals & Sound</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#download-section">Download</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
       <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
+        <button type="button" class="burger-btn" data-action="open">
+          <svg class="mobile-menu-burger-btn" width="24" height="24">
+            <use href="../img/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
         <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
+          <button type="button" class="btn-close" data-action="close">
+            <svg class="cross-icon" width="24" height="24">
+              <use href="../img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="nav-burger-list">
+            <li class="nav-burger-item">
+              <a class="nav-burger-link" href="#hero-section">Home</a>
+            </li>
+            <li class="nav-burger-item">
+              <a class="nav-burger-link" href="#about-the-game-section"
+                >About the Game</a
+              >
+            </li>
+            <li class="nav-burger-item">
+              <a class="nav-burger-link" href="#how-it-works-section"
+                >How It Works</a
+              >
+            </li>
+            <li class="nav-burger-item">
+              <a class="nav-burger-link" href="#key-features-section"
+                >Key Features</a
+              >
+            </li>
+            <li class="nav-burger-item">
+              <a class="nav-burger-link" href="#castle-adventure-section"
+                >Castle Adventure</a
+              >
+            </li>
+            <li class="nav-burger-item">
+              <a class="nav-link" href="#power-ups-section">Power-Ups</a>
+            </li>
+            <li class="nav-burger-item">
+              <a class="nav-burger-link" href="#levels-&-rewards-section"
+                >Levels & Rewards</a
+              >
+            </li>
+            <li class="nav-burger-item">
+              <a class="nav-burger-link" href="#visuals-&-sound-section"
+                >Visuals & Sound</a
+              >
+            </li>
+            <li class="nav-burger-item">
+              <a class="nav-burger-link" href="#download-section">Download</a>
+            </li>
+            <li class="nav-burger-item">
+              <a class="nav-burger-link" href="#contact-section">Contact</a>
+            </li>
           </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu-wrapper"></div>
+  <div class="tablet-menu-wrapper"></div>
 </header>
+
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
+      <section class="section hero">
+  <div class="hero-container">
+    <div class="icon-and-name-container">
+      <h1 class="main-title" data-text="Castle Match">
+        <span class="title-accent">Castle</span> Match
+      </h1>
+    </div>
+    <div class="hero-sectiob-container" id="hero-section">
+      <h2 class="hero-title visually-hidden">Hero Section</h2>
+      <p class="under-header-text">Enter the Castle Match Realm</p>
+      <ul class="hero-list">
+        <li class="hero-list-item">
+          <p class="bold-text">Match, Build, Discover - Your Castle Awaits!</p>
+          <p class="text">
+            <span class="accent-text-purple">Welcome to Castle Match,</span>
+            the magical puzzle adventure where treasures are matched, castles
+            are built, and legends are born! Help the princess collect hidden
+            gems, unlock enchanted boosters, and restore the kingdom - one
+            puzzle at a time.
+          </p>
+          <p class="text under-block">
+            Complete levels, unlock rewards, uncover secrets
+          </p>
+        </li>
+        <li class="hero-list-item">
+          <div class="img-and-text-container gem">
+            <div class="thumb">
+              <img
+                srcset="../img/home_page/gems.jpg 1x, ../img/home_page/gems@2x.jpg 2x"
+                src="../img/home_page/gems.jpg"
+                alt="three purple gems"
+              />
+            </div>
+            <p class="bonus-text">
+              <span class="accent-text-purple">Match 3+</span><br />
+              magical items
+            </p>
+          </div>
+        </li>
+        <li class="hero-list-item">
+          <div class="img-and-text-container castle">
+            <div class="thumb">
+              <img
+                srcset="../img/home_page/castel_small.jpg 1x, ../img/home_page/castel_small@2x.jpg 2x"
+                src="../img/home_page/castel_small.jpg"
+                alt="small castele in the clouds"
+              />
+            </div>
+
+            <p class="bonus-text">
+              <span class="accent-text-purple">Rebuild</span><br />
+              glorious&nbsp;castle&nbsp;rooms
+            </p>
+          </div>
+        </li>
+      </ul>
       <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
+        class="play-btn"
+        href="https://play.google.com/store/apps/details?id=com.studio.cm.freegame&hl=en&gl=us"
         target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
       >
-        <!-- Path to images as from index.html file -->
         <img
-          class="pic"
-          src="/evpl_vite_template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
+          class="play-icon"
+          src="../img/Playstore@2x.png"
+          width="18"
+          height="22"
         />
+        <p class="btn-text">Play Now Free on Google Play</p>
       </a>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
   </div>
 </section>
 
-      <article class="badges">
+      
+      <section class="section how-it-works-section">
+  <div class="container how-it-works-cont">
+    <h2 id="how-it-works-section" class="title">How It Works</h2>
+    <p class="sub-title">Easy Steps to Match Like Royalty</p>
+    <p class="description how-it-works-descr">
+      Each level gets tougher, each combo more satisfying - and each castle
+      room, a masterpiece!
+    </p>
+    <div class="position-wrapper">
+      <div class="bubble-block bubble1">
+        <div class="bubble-img"></div>
+        <p class="description bubble-text">
+          <span class="accent-text-white">Match 3</span> or more identical items
+          to clear the board
+        </p>
+      </div>
+      <div class="bubble-block bubble2">
+        <div class="bubble-img"></div>
+        <p class="description bubble-text">
+          <span class="accent-text-white">Unlock</span> coins, gems, and special
+          boosters
+        </p>
+      </div>
+      <div class="bubble-block bubble3">
+        <div class="bubble-img"></div>
+        <p class="description bubble-text">
+          <span class="accent-text-white">Build</span> beautiful castle scenes
+          as you progress
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section key-features-section" >
+   <div class="tube-img-left"></div>
+    <div class="tube-img-right"></div>
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <h2 id="key-features-section" class="title key-features">Key Features</h2>
+    <p class="sub-title">Why Players Love Castle Match</p>
+
+    <div class="logo-img"></div>
+    <ul class="section-key-list">
+      <li class="section-key-list-item first">
+        <ul class="block-key-list">
+          <li class="block-key-list-item ">
+            <p class="description"><span class="accent-text-white">Addictive Gameplay</span><br />
+              Smooth match-3 mechanics with no stress</p>
+          </li>
+          <li class="block-key-list-item">
+            <p class="description"><span class="accent-text-white">Special Power-Ups:</span><br />
+              From magic wands to thunder blasts</p>
+          </li>
+          <li class="block-key-list-item">
+            <p class="description"><span class="accent-text-white">Daily Rewards:</span><br />
+              Log in to win treasures and surprises</p>
+          </li>
+        </ul>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      
+      <li class="section-key-list-item second">
+        <ul class="block-key-list">
+          <li class="block-key-list-item">
+            <p class="description"><span class="accent-text-white">Castle Customization:</span><br />
+              Unlock rooms and design them your way</p>
+          </li>
+          <li class="block-key-list-item">
+            <p class="description"><span class="accent-text-white">Gorgeous Art Style:</span><br />
+              Lush, colorful fantasy visuals</p>
+          </li>
+          <li class="block-key-list-item">
+            <p class="description"><span class="accent-text-white">Offline Ready:</span><br />
+              Enjoy the game anytime, anywhere</p>
+          </li>
+        </ul>
       </li>
     </ul>
+    </div>
   </div>
-</article>
+</section>
+
+      <section class="section">
+  <div class="container castle-advent-container">
+    <div>
+      <h2 class="title">Castle Adventure</h2>
+      <p class="sub-title sub-title-castle-advent">
+        Rebuild a Kingdom Through Puzzle Magic
+      </p>
+    </div>
+    <div class="castle-advent-wrapper">
+      <div class="thumb-castle-advent">
+        <img
+          srcset="../img/princess.jpg 1x, ../img/princess@2x.jpg 2x"
+          src="../img/princess.jpg"
+          alt="Princess"
+        />
+      </div>
+      <div class="scroll-container">
+        <img src="/evpl_vite_template/assets/scroll-DgyfQ78O.png" class="scroll" alt="Magic Scroll" />
+        <div class="castle-advent-description-wrapper">
+          <p class="description">
+            The princess needs your help to restore her home. Each chapter takes
+            you through different parts of the castle — from throne rooms to
+            hidden vaults. Complete puzzle tasks to unlock magical areas and
+            reveal the castle’s forgotten history.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container boosters-container">
+    <div class="boosters-title-wrapper">
+      <h2 class="title boosters-main-title">Power-Ups & Boosters</h2>
+      <p class="sub-title">Magical Helpers Along the Way</p>
+    </div>
+    <div class="boosters-wrapper">
+      <div class="boosters-description-wrapper">
+        <p class="description">
+          Unlock and upgrade a series of fantastic power-ups. Use your strategy
+          to combine boosters for epic effects!
+        </p>
+      </div>
+      <ul class="boosters-list boosters-group-1">
+        <li class="boosters-list-item">
+          <img
+            class="booosters-list-img"
+            srcset="../img/power-ups_&_boosters/bomb.png 1x, ../img/power-ups_&_boosters/bomb@2x.png 2x"
+            src="../img/power-ups_&_boosters/bomb.png"
+            alt="Bomb"
+          />
+          <div class="boosters-description">
+            <p class="boosters-title">Treasure Bomb</p>
+            <p class="boosters-text">Clear a huge area</p>
+          </div>
+        </li>
+        <li class="boosters-list-item">
+          <div class="boosters-description boosters-group-2">
+            <p class="boosters-title">Royal Flame</p>
+            <p class="boosters-text">Burn through entire rows</p>
+          </div>
+          <img
+            class="booosters-list-img"
+            srcset="../img/power-ups_&_boosters/fire.png 1x, ../img/power-ups_&_boosters/fire@2x.png 2x"
+            src="../img/power-ups_&_boosters/fire.png"
+            alt="Fire"
+          />
+        </li>
+      </ul>
+      <ul class="boosters-list boosters-group-2">
+        <li class="boosters-list-item">
+          <img
+            class="booosters-list-img"
+            srcset="../img/power-ups_&_boosters/lightning.png 1x, ../img/power-ups_&_boosters/lightning@2x.png 2x"
+            src="../img/power-ups_&_boosters/lightning.png"
+            alt="Lightning"
+          />
+          <div class="boosters-description">
+            <p class="boosters-title">Lightning Bolt</p>
+            <p class="boosters-text">Match in a flash</p>
+          </div>
+        </li>
+        <li class="boosters-list-item">
+          <div class="boosters-description boosters-group-2">
+            <p class="boosters-title">Mystery Orb</p>
+            <p class="boosters-text">Adds powerful matches randomly</p>
+          </div>
+          <img
+            class="booosters-list-img"
+            srcset="../img/power-ups_&_boosters/sphere.png 1x, ../img/power-ups_&_boosters/sphere@2x.png 2x"
+            src="../img/power-ups_&_boosters/sphere.png"
+            alt="Sphere"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      
+      
+      
+      
+      <section class="section support-section">
+  <div class="container support-container">
+    <div class="support-title-wrapper">
+      <h2 class="title boosters-main-title">Contact & Support</h2>
+      <div>
+        <p>
+          Got a question or suggestion for our royal puzzle team? We’re here to
+          help!
+        </p>
+        <div>
+          <ul>
+            <li>Email: info@glowcastlemania.com</li>
+            <li>Mon - Fri, 9am - 6pm GMT</li>
+            <li>
+              Follow us on social:
+              <ul class="footer-social-list">
+                <li class="footer-list-item">
+                  <a href="" class="footer-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="../img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="../img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="" class="footer-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="../img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     </main>
 
-    <footer class="footer">
-  <div class="container">
+    <footer class="footer-section">
+  <div class="container policy-container">
+    <ul class="policy-wrapper">
+      <li>Privacy Policy</li>
+      <li>Cookies Policy</li>
+      <li>Terms of Conditions</li>
+    </ul>
     <p class="footer-desc">
-      Made with ✨ by
+      © 2025
       <a
         class="footer-link"
-        href="https://goit.global/ua/"
+        href="https://glowcastlemania.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        GoIT team
+        glowcastlemania.com
       </a>
+      - All rights reserved.
     </p>
   </div>
 </footer>
 
+    
 
   </body>
 </html>
