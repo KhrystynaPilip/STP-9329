@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 32px;
   min-height: 650px;
+  max-width: 1500px;
 }
 
 .sub-title-castle-advent {
@@ -16,7 +17,7 @@
 
 .thumb-castle-advent {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: auto;
   display: flex;
   justify-content: center;
@@ -105,6 +106,7 @@
   }
 
   .thumb-castle-advent img {
+    min-width: 1200px;
     height: 883px;
     transform-origin: left top;
     transform: scale(1.25);

@@ -52,7 +52,7 @@
 }
 
 .booosters-list-img {
-  width: 136px;
+  width: auto;
   height: 124px;
 }
 
@@ -60,7 +60,7 @@
   .boosters-wrapper {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .boosters-description-wrapper {
@@ -72,6 +72,7 @@
   .boosters-list {
     flex-direction: column;
     gap: 64px;
+    min-width: 242px;
   }
 
   .boosters-list-item {
@@ -79,7 +80,12 @@
     gap: 0px;
   }
 
-  .boosters-list-item .boosters-group-2 {
+  .align-start {
+    align-items: flex-start;
+  }
+
+  .align-end {
+    align-items: flex-end;
   }
 
   .boosters-title {
@@ -98,6 +104,5 @@
 
   .booosters-list-img {
     height: 145px;
-    width: auto;
   }
 }
