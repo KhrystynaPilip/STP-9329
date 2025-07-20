@@ -1,10 +1,17 @@
 .visuals-atmosphere-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 32px;
   min-height: 1000px;
-  max-width: 1500px;
   padding: 0;
+  /* max-width: 1500px; */
+
+  /* Можна спробувати не ставити загальний контейнер, бо в ньому нам заважають його падінги */
+  min-width: 320px;
+  /* max-width: 375px; */
+  margin: 0 auto;
 }
 
 .sub-title-castle-advent {
@@ -14,27 +21,25 @@
 .visuals-atmosphere-wrapper {
   position: relative;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .thumb-throne {
   position: relative;
-  width: 100vw;
+  /* width: 100vw; */
+  width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  /** спробуєш через гумовий контейнер?:3
-  /** або може взагалі через background-image?
-  Бо НЕ резинова картинка пробиває основні рамки і в нас на 320px
-  зʼявляється загадкова пустота справа */
-
-  /* width: 100%;
-  max-width: 100%;
-  height: auto; */
+  /* overflow: hidden; */
+  /** або може взагалі через background-image?*/
 }
 
 .thumb-throne img {
   width: 100vw;
+}
+.thumb-castle-advent img {
+  /* width: 100vw; */
   height: 300px;
   object-fit: cover;
   object-position: center;
@@ -128,10 +133,10 @@
   }
 
   .thumb-castle-advent img {
-    min-width: 1200px;
+    /* min-width: 1200px; */
     height: 883px;
-    transform-origin: left top;
-    transform: scale(1.25);
+    /* transform-origin: left top;
+    transform: scale(1.25); */
   }
 
   .castle-advent-description-wrapper {
