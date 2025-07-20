@@ -4,6 +4,7 @@
   gap: 32px;
   min-height: 1000px;
   max-width: 1500px;
+  padding: 0;
 }
 
 .sub-title-castle-advent {
@@ -15,7 +16,7 @@
   width: 100%;
 }
 
-.thumb-castle-advent {
+.thumb-throne {
   position: relative;
   width: 100vw;
   height: auto;
@@ -32,7 +33,7 @@
   height: auto; */
 }
 
-.thumb-castle-advent img {
+.thumb-throne img {
   width: 100vw;
   height: 300px;
   object-fit: cover;
@@ -114,7 +115,7 @@
   height: 60px;
   background: #381677;
   border-radius: 20px;
-  padding: 10px 55px;
+  padding: 10px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
