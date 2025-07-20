@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  min-height: 710px;
+  min-height: 650px;
 }
 
 .sub-title-castle-advent {
@@ -22,7 +22,7 @@
   justify-content: center;
   overflow: hidden;
   /** спробуєш через гумовий контейнер?:3
-  /** або може взагалі через background-image? 
+  /** або може взагалі через background-image?
   Бо НЕ резинова картинка пробиває основні рамки і в нас на 320px
   зʼявляється загадкова пустота справа */
 
