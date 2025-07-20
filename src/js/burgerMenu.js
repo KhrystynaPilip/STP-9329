@@ -1,11 +1,17 @@
 const openBtnEl = document.querySelector('[data-action="open"]');
 const closeBtnEl = document.querySelector('[data-action="close"]');
-const burgerMenuEl = document.querySelector('[data-visible]');
+const burgerMenuEl = document.querySelector('[data-menu-visible]');
 
-openBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'open';
-});
+function openMenu() {
+  burgerMenuEl.dataset.menuVisible = 'true';
+  document.body.style.overflow = 'hidden';
+}
 
-closeBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'close';
-});
+function closeMenu() {
+  burgerMenuEl.dataset.menuVisible = 'false';
+  document.body.style.overflow = '';
+}
+
+openBtnEl.addEventListener('click', openMenu);
+
+closeBtnEl.addEventListener('click', closeMenu);

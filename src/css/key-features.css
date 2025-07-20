@@ -81,7 +81,6 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 64px;
-    padding: 0 48px;
     height: 100%;
   }
   .section-key-list-item.first {
