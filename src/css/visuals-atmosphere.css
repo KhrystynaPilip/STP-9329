@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 32px;
   min-height: 1000px;
+  padding: 0;
   /* max-width: 1500px; */
 
   /* Можна спробувати не ставити загальний контейнер, бо в ньому нам заважають його падінги */
@@ -25,7 +26,7 @@
   align-items: center;
 }
 
-.thumb-castle-advent {
+.thumb-throne {
   position: relative;
   /* width: 100vw; */
   width: 100%;
@@ -34,6 +35,9 @@
   /** або може взагалі через background-image?*/
 }
 
+.thumb-throne img {
+  width: 100vw;
+}
 .thumb-castle-advent img {
   /* width: 100vw; */
   height: 300px;
@@ -116,7 +120,7 @@
   height: 60px;
   background: #381677;
   border-radius: 20px;
-  padding: 10px 55px;
+  padding: 10px 50px;
   display: flex;
   justify-content: center;
   align-items: center;

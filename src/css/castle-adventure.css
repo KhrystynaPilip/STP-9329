@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 32px;
   min-height: 650px;
+  padding: 0;
   /* max-width: 1500px; */
 
   /* Можна спробувати не ставити загальний контейнер, бо в ньому нам заважають його падінги */
