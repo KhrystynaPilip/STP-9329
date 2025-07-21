@@ -1,17 +1,15 @@
 .castle-advent-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 32px;
   min-height: 650px;
   padding: 0;
-  /* max-width: 1500px; */
+  max-width: 1500px;
 
-  /* Можна спробувати не ставити загальний контейнер, бо в ньому нам заважають його падінги */
+  /* Можна спробувати не ставити загальний контейнер, бо в ньому нам заважають його падінги
   min-width: 320px;
   max-width: 375px;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
 .sub-title-castle-advent {
@@ -29,11 +27,10 @@
 .thumb-castle-advent {
   /** або може взагалі через background-image?*/
   position: relative;
-  /* width: 100vw; */
-  width: 100%;
-  max-width: 450px;
+  width: 100vw;
+  /* max-width: 450px; */
   height: auto;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .thumb-castle-advent img {
@@ -73,10 +70,10 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -90%;
+  bottom: -70%;
   width: 100%;
   max-width: 100vw;
-  height: 320px;
+  height: 270px;
   overflow-x: hidden;
   display: flex;
   justify-content: center;
@@ -102,22 +99,22 @@
 
 @media only screen and (min-width: 1200px) {
   .castle-advent-container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     gap: 64px;
   }
 
   .sub-title-castle-advent {
     width: 100%;
   }
-
+  /*
   .thumb-castle-advent {
     max-width: 100%;
-  }
+  } */
   .thumb-castle-advent img {
     min-width: 1200px;
     height: 883px;
-    /* transform-origin: left top;
-    transform: scale(1.25); */
+    transform-origin: left top;
+    transform: scale(1.25);
   }
 
   .castle-advent-description-wrapper {
