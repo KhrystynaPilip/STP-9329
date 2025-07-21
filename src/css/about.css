@@ -1,1 +1,150 @@
+/*! Тут десктоп дещо на палках тримаєтьсяТ-Т */
 
+.about-the-game-scroll-container {
+  margin: 24px auto 0 auto;
+  position: relative;
+  max-width: 100%;
+  height: 334px;
+}
+.scroll-img {
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../img/scroll.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 318px;
+  height: 124px;
+}
+
+.about-the-game-scroll-description-wrapper {
+  position: absolute;
+  top: 62px;
+  left: 50%;
+  /* Центрування */
+  --offset-x: -50%;
+  transform: translateX(var(--offset-x)) scaleY(0);
+
+  transform-origin: top center;
+  animation: unfoldScrollWrapper 1s ease-out forwards;
+  animation-delay: 1.65s;
+
+  width: 254px;
+  padding: 10px 12px;
+  height: auto;
+  border-bottom: 10px solid var(--yellow-stroke);
+  border-left: 10px solid var(--yellow-stroke);
+  border-right: 10px solid var(--yellow-stroke);
+  border-radius: 20px 20px 40px 40px;
+  box-shadow: inset -5px 5px 4px 0 rgba(29, 6, 73, 0.5),
+    inset 5px -5px 4px 0 rgba(29, 6, 73, 0.5);
+  background: var(--violet);
+  opacity: 0;
+  z-index: 2;
+}
+
+@keyframes unfoldScrollWrapper {
+  0% {
+    transform: translateX(var(--offset-x)) scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(var(--offset-x)) scaleY(1);
+    opacity: 1;
+  }
+}
+
+.about-the-game-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.about-the-game-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+.about-the-game-list.first {
+  align-items: flex-start;
+}
+.about-the-game-list.second {
+  align-items: flex-end;
+}
+.about-the-game-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (min-resolution: 192dpi) {
+  .scroll-img {
+    background-image: url(../img/scroll@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-the-game-content-container {
+    margin-top: 64px;
+    display: flex;
+    height: 516px;
+    gap: 270px;
+    justify-content: space-between;
+  }
+  .about-the-game-scroll-container {
+    margin-top: 0;
+
+    align-self: flex-end;
+    height: 414px;
+  }
+  .about-the-game-list-container {
+    align-self: flex-start;
+  }
+
+  .scroll-img {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../img/scroll.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 537px;
+    height: 209px;
+  }
+
+  .about-the-game-scroll-description-wrapper {
+    position: absolute;
+    top: 108px;
+    width: 430px;
+
+    border-bottom: 10px solid var(--yellow-stroke);
+    border-left: 10px solid var(--yellow-stroke);
+    border-right: 10px solid var(--yellow-stroke);
+    border-radius: 20px 20px 40px 40px;
+    padding: 20px 40px;
+  }
+
+  .mob-exp-section-content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .about-the-game-list-container {
+    gap: 58px;
+  }
+  .about-the-game-list {
+    gap: 58px;
+  }
+  .about-the-game-list.second {
+    align-items: flex-start;
+  }
+  .about-the-game-item {
+    gap: 8px;
+  }
+}
