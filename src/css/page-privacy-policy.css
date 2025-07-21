@@ -12,6 +12,7 @@
 .terms-section {
   padding-top: 84px;
 }
+
 .terms-content-container {
   background: var(--bg-1block);
   border-radius: 10px;
@@ -55,9 +56,15 @@
   gap: 12px;
 }
 
-.unorder-terms-list {
-  padding: 0 16px;
-  list-style: disc;
+.unorder-terms-list-item {
+  position: relative;
+  padding-left: 23px;
+}
+.unorder-terms-list-item::before {
+  content: '•';
+  position: absolute;
+  left: 7px;
+  top: 0;
 }
 
 .terms-number-wrapper {
@@ -71,32 +78,41 @@
   flex-direction: row;
   width: 5px;
 }
-
-.unorder-terms-list-item {
-}
-
 .terms-list-item a {
   color: #00e;
+}
+.unorder-terms-list-link-item a {
+  color: #00e;
   transition: color 0.3s ease;
+  position: relative;
+  padding-left: 24px;
 }
 
-.terms-list-item a:hover {
+.terms-list-item a:hover,
+.unorder-terms-list-link-item a:hover {
   color: var(--castle-color);
 }
 
-.terms-list-item a:focus {
+.terms-list-item a:focus,
+.unorder-terms-list-link-item a:focus {
   color: var(--green);
 }
 
-.unorder-terms-list-link-item {
-  position: relative;
-  padding-left: 3px;
-}
-
-.unorder-terms-list-link-item::before {
+.unorder-terms-list-link-item a::before {
   content: '•';
   position: absolute;
-  left: -10px;
-  top: -3px;
-  color: #00e;
+  left: 9px;
+  top: 0;
+  color: currentColor;
+}
+@media only screen and (min-width: 1200px) {
+  .terms-section {
+    padding-top: 164px;
+  }
+  .back-link-btm-container {
+    position: relative;
+    padding: 0 80px;
+    background-color: transparent;
+    height: 0;
+  }
 }
