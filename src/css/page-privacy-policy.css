@@ -1,9 +1,18 @@
-.terms-section {
-  margin-right: 16px;
-  margin-left: 16px;
+.back-link-btm-container {
+  position: fixed;
+  height: 44px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  padding-bottom: 10px;
+  background: var(--blue);
 }
-
-.terms-container {
+.terms-section {
+  padding-top: 84px;
+}
+.terms-content-container {
   background: var(--bg-1block);
   border-radius: 10px;
   padding: 40px 16px;
