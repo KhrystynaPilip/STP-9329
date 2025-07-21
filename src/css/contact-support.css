@@ -62,20 +62,21 @@
   gap: 40px;
   justify-content: center;
 }
-/* .support-social-list-item {
+.support-social-list-item {
 }
 .support-list-link {
-} */
+  transition: 200ms ease-in;
+}
 .social-list-icon {
   fill: var(--white);
-  transition: fill 200ms ease-in;
+  transition: 200ms ease-in;
 }
 
-.social-list-icon:hover {
-  fill: var(--castle-color);
+.support-list-link:hover {
+  color: var(--castle-color);
 }
 
-.support-list-item:focus {
+.support-list-link:focus {
   color: var(--green);
 }
 
