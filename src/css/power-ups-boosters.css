@@ -74,6 +74,7 @@
     flex-direction: column;
     gap: 64px;
     min-width: 242px;
+    align-items: normal;
   }
 
   .boosters-list-item {
