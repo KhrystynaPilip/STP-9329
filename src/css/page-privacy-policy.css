@@ -1,8 +1,14 @@
+.terms-section {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
 .terms-container {
   background: var(--bg-1block);
   border-radius: 10px;
   padding: 40px 16px;
   text-align: start;
+  min-width: calc(100% - 32px);
 }
 .main-terms-title {
   font-family: 'Inter', sans-serif;
@@ -12,8 +18,16 @@
   margin-bottom: 32px;
 }
 
+.terms-description {
+  margin-bottom: 8px;
+}
+
 .terms-accent {
   font-weight: 600;
+}
+
+.terms-main-description {
+  margin-bottom: 24px;
 }
 
 .terms-list {
@@ -27,7 +41,53 @@
   font-weight: 400;
   font-size: 16px;
   color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.terms-list-title {
+.unorder-terms-list {
+  padding: 0 16px;
+  list-style: disc;
+}
+
+.terms-number-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.terms-number-box {
+  display: inline-flex;
+  flex-direction: row;
+  width: 5px;
+}
+
+.unorder-terms-list-item {
+}
+
+.terms-list-item a {
+  color: #00e;
+  transition: color 0.3s ease;
+}
+
+.terms-list-item a:hover {
+  color: var(--castle-color);
+}
+
+.terms-list-item a:focus {
+  color: var(--green);
+}
+
+.unorder-terms-list-link-item {
+  position: relative;
+  padding-left: 3px;
+}
+
+.unorder-terms-list-link-item::before {
+  content: '•';
+  position: absolute;
+  left: -10px;
+  top: -3px;
+  color: #00e;
 }
