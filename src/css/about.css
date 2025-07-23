@@ -70,6 +70,7 @@
 .about-the-game-list.first {
   align-items: flex-start;
 }
+
 .about-the-game-list.second {
   align-items: flex-end;
 }
@@ -77,6 +78,17 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.about-the-game-list.first .about-the-game-item .description {
+  max-width: 139px;
+  text-align: left;
+}
+.about-the-game-list.second .about-the-game-item {
+  flex-direction: row-reverse;
+}
+.about-the-game-list.second .about-the-game-item .description {
+  max-width: 140px;
+  text-align: left;
 }
 
 @media (min-resolution: 192dpi) {
@@ -146,5 +158,14 @@
   }
   .about-the-game-item {
     gap: 8px;
+  }
+  .about-the-game-list.second .about-the-game-item {
+    flex-direction: row;
+  }
+  .about-the-game-list.first .about-the-game-item .description {
+    max-width: 100%;
+  }
+  .about-the-game-list.second .about-the-game-item .description {
+    max-width: 100%;
   }
 }
