@@ -152,7 +152,7 @@
   }
 
   .visuals-atmosphere-list {
-    transform: translateX(180%);
+    transform: translateX(170%);
     bottom: 10%;
     gap: 40px;
   }
