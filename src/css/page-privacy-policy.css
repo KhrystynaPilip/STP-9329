@@ -115,4 +115,7 @@
     background-color: transparent;
     height: 0;
   }
+  .back-link-btm-container .container {
+    position: relative;
+  }
 }
