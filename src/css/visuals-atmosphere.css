@@ -5,11 +5,7 @@
   gap: 32px;
   min-height: 910px;
   padding: 0;
-
-  /* Можна спробувати не ставити загальний контейнер, бо в ньому нам заважають його падінги
-  min-width: 320px;
-  /* max-width: 375px; */
-  /* margin: 0 auto; */
+  max-width: 320px;
 }
 
 .sub-title-castle-advent {
@@ -30,7 +26,6 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  /** або може взагалі через background-image?*/
 }
 
 .thumb-throne img {
@@ -131,7 +126,7 @@
   }
 
   .thumb-throne img {
-    /* min-width: 1200px; */
+    max-width: 1200px;
     height: 616px;
     /* transform-origin: left top; */
   }
