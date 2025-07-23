@@ -7,7 +7,7 @@
 .screens-container {
   margin-top: 32px;
   margin-bottom: 16px;
-  width: 288px;
+  /* width: 288px; */
   height: 854px;
   position: relative;
 }
