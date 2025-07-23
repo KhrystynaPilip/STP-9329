@@ -4,7 +4,7 @@
   gap: 32px;
   min-height: 630px;
   padding: 0;
-  max-width: 1500px;
+  max-width: 320px;
 
   /* Можна спробувати не ставити загальний контейнер, бо в ньому нам заважають його падінги
   min-width: 320px;
@@ -27,14 +27,14 @@
 .thumb-castle-advent {
   /** або може взагалі через background-image?*/
   position: relative;
-  width: 100vw;
+  width: 100%;
   /* max-width: 450px; */
   height: auto;
   overflow: hidden;
 }
 
 .thumb-castle-advent img {
-  width: 100vw;
+  width: 100%;
   height: 300px;
   object-fit: cover;
   object-position: center;
@@ -99,7 +99,7 @@
 
 @media only screen and (min-width: 1200px) {
   .castle-advent-container {
-    /* max-width: 1200px; */
+    max-width: 1200px;
     gap: 64px;
   }
 

@@ -5,7 +5,6 @@
   gap: 32px;
   min-height: 910px;
   padding: 0;
-  max-width: 1500px;
 
   /* Можна спробувати не ставити загальний контейнер, бо в ньому нам заважають його падінги
   min-width: 320px;
@@ -28,7 +27,7 @@
 
 .thumb-throne {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: auto;
   overflow: hidden;
   /** або може взагалі через background-image?*/
@@ -132,7 +131,7 @@
   }
 
   .thumb-throne img {
-    min-width: 1200px;
+    /* min-width: 1200px; */
     height: 616px;
     /* transform-origin: left top; */
   }
