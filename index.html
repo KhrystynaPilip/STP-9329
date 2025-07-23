@@ -66,7 +66,7 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Castle Match" />
     <script type="module" crossorigin src="/STP-9329/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-9329/assets/styles-DfUXXBYU.css">
+    <link rel="stylesheet" crossorigin href="/STP-9329/assets/styles-BwIyp0FH.css">
   </head>
 
   <body>
@@ -153,7 +153,7 @@
   <!--! Mobile Menu NOT in container-->
   <!--! Керування видимістю через data-menu-visible="true/false". -->
 
-  <div class="burger-menu" data-menu-visible="false">
+  <div class="burger-menu" data-menu-visible="false" data-visible="mobile">
     <!-- Btn and list -->
     <div class="burger-menu__content">
       <button type="button" class="btn-close" data-action="close">
@@ -201,6 +201,12 @@
       </ul>
     </div>
   </div>
+  <div
+    class="burger-menu__backdrop"
+    data-action="close"
+    data-backdrop-visible="false"
+    data-visible="mobile"
+  ></div>
 </header>
 
 

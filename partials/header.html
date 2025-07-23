@@ -81,7 +81,7 @@
   <!--! Mobile Menu NOT in container-->
   <!--! Керування видимістю через data-menu-visible="true/false". -->
 
-  <div class="burger-menu" data-menu-visible="false">
+  <div class="burger-menu" data-menu-visible="false" data-visible="mobile">
     <!-- Btn and list -->
     <div class="burger-menu__content">
       <button type="button" class="btn-close" data-action="close">
@@ -129,4 +129,10 @@
       </ul>
     </div>
   </div>
+  <div
+    class="burger-menu__backdrop"
+    data-action="close"
+    data-backdrop-visible="false"
+    data-visible="mobile"
+  ></div>
 </header>
