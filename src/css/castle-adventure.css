@@ -72,7 +72,7 @@
   transform: translateX(-50%);
   bottom: -70%;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   height: 280px;
   overflow-x: hidden;
   display: flex;
@@ -80,7 +80,7 @@
 }
 
 .scroll {
-  width: 320px;
+  width: 318px;
   height: 124px;
 }
 
